@@ -304,7 +304,7 @@ def reverse(S, start, stop):
   \begin{itemize}
     \item možemo napraviti brži linearno rekurzivan algoritam pomoću ponavljanog kvadriranja:
   \end{itemize}
-  $$ p(x,n) = \left\{ \begin{array}{c l} 1 & \quad \text{ako je } x=0 \\x\cdot p(x, \frac{n-1}{2})^2 & \quad \text{ako je } x>0 \text{ neparan}\\p(x,n/2)^2 & \quad \text{ako je } x>0 \text{ paran} \end{array}\right. $$
+  $$ p(x,n) = \left\{ \begin{array}{c l} 1 & \quad \text{ako je } n=0 \\x\cdot p(x, \frac{n-1}{2})^2 & \quad \text{ako je } n>0 \text{ neparan}\\p(x,n/2)^2 & \quad \text{ako je } n>0 \text{ paran} \end{array}\right. $$
   \begin{itemize}
     \item na primer: \\
     $ 2^4 = 2^{(4/2)2} = (2^{4/2})^2 = (2^2)^2 = 4^2 = 16 $ \\
