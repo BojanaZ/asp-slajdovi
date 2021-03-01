@@ -202,7 +202,10 @@ primes = array('i', [2, 3, 5, 7, 11, 13, 17, 19])
     \item ukupno vreme $T(n)$ za seriju od $n$ operacija ubacivanja je
     proporcionalno sa:
     $$ n + 1 + 2 + 4 + 8 + \ldots + 2^k = $$
-    $$ n + 2^{k+1} = $$
+    $$ n + 2^{k+1} - 1 = $$
+    $$ n + 2 * 2^{k} -1 = $$
+    $$ n + 2 * 2^{\log_2 n} -1 = $$
+    $$ n + 2n -1 = $$
     $$ 3n - 1$$
     \item $T(n)$ je $O(n)$
     \item $\Rightarrow$ amortizovano vreme operacije ubacivanja je $O(1)$
