@@ -70,7 +70,7 @@ Novom Sadu}
 \begin{frame}[fragile]
   \frametitle{Element jednostruko spregnute liste u Pythonu}
 \begin{minted}[linenos=false]{python}
-class Node:
+class Node(object):
   def __init__(self, element, next):
     self._element = element
     self._next = next
@@ -185,7 +185,7 @@ class Node:
 \begin{frame}[fragile,shrink]
   \frametitle{Implementacija jednostruko spregnute liste u Pythonu $_1$}
 \begin{minted}[linenos=false]{python}
-class SingleList:
+class SinglyLinkedList(object):
   def __init__(self):
     self._head = self._tail = None
   
@@ -263,7 +263,7 @@ class SingleList:
 \begin{frame}[fragile]
   \frametitle{Element dvostruko spregnute liste u Pythonu}
 \begin{minted}[linenos=false]{python}
-class Node2:
+class Node2(object):
   def __init__(self, element, prev, next):
     self._element = element
     self._prev = prev
@@ -314,7 +314,7 @@ class Node2:
 \begin{frame}[fragile,shrink]
   \frametitle{Dvostruko spregnuta lista u Pythonu}
 \begin{minted}[linenos=false]{python}
-class DoubleList:
+class DoublyLinkedList(object):
   def __init__(self):
     self._head = self.Node2(None, None, None)
     self._tail = self.Node2(None, None, None)
